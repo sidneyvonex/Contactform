@@ -10,49 +10,94 @@ body{
 }
 
 .inputForm{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 50px;
     background-color: #fff;
     border: none;
     border-radius: 10px;
     
 }
+.first2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+.rows{
+    margin-bottom: 20px;
+}
 form, h1{
     padding: 10px;
+    font-size: 2em;
 }
-.attribution{
+h1{
     text-align: center;
-    padding-top: 20px;
+    color: hsl(169, 82%, 27%);
 }
+
 form label{
-    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.9rem;
 }
-form input[type="email"], input[type="textarea"]{
-    width: 100%;
-    border: 1px solid #333;
-    border-radius: 5px;
+p{
+    color:#4a5568;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 8px;
+    color: #4a5568;
+    font-weight: 600;
 }
-form input[type="email"],input[type="text"]{
-    border: 1px solid #333;
-    border-radius: 5px;
-    padding: px;
+form input[type="email"]{
+    width: 98%;
+    border-radius: 6px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+}
+form input[type="text"]{
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
 }
 form input[type="textarea"]{
-    border: 1px solid #333;
-    border-radius: 5px;
-    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin: 0;
     height: 100px;
+    width: 100%;
+}
+.radio{
+    width: 500px;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
 }
 form input[type="submit"]{
     background-color:hsl(169, 82%, 27%);
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    justify-content: center;
+    padding: 10px 20px;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
     text-align: center;
     
+}
+
+.attribution{
+    text-align: center;
+    padding: 20px;
+}
+.attribution a{
+    color: hsl(0, 100%, 50%);
+    text-decoration: none;
 }

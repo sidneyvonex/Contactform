@@ -11,19 +11,30 @@
     <div class="inputForm">
     <h1>Contact us</h1>
     <form>
-        <label for="Firstname">First Name *</label>
-        <input type="text" required>
-        <label for="Lastname">Last Name *</label>
-        <input type="text" required ><br>
-        <label for="Email" >Email Address * <br></label>
-        <input type="email" required placeholder="Please Enter a valid email address">
+        <div class="first2">
+            <div class="rows">
+                <label for="Firstname">First Name *</label>
+                <input type="text" required>
+            </div>
+            <div class="rows">
+                <label for="Lastname">Last Name *</label>
+                <input type="text" required >
+            </div>
+         </div>
+        <div class="rows">
+            <label for="Email" >Email Address * </label>
+            <input type="email" required >
+        </div>
         <p>Query Type *</p>
+        <div class="rows"><input type="radio">
+        <label class="radio" for="Querytype">General Inquiry*</label>
         <input type="radio">
-        <label for="Querytype">Query Type *</label>
-        <input type="radio">
-        <label for="Querytype">Query Type *</label><br>
-        <label for="message">Message *</label><br>
-        <input type="textarea" required><br>
+        <label class="radio" for="Querytype">Support Request *</label>
+    </div>
+        <div class="rows">
+            <label for="message">Message *</label>
+            <input type="textarea" required>
+        </div>
         <input type="checkbox" required>
         <label for="checkbox">I consent to being contacted by the team *</label><br>
         <input type="submit" value="Submit">
